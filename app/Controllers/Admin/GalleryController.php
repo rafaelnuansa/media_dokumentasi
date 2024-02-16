@@ -13,13 +13,20 @@ class GalleryController extends BaseController
 	public function index()
 	{
 		$model = new GalleryModel();
+
+		// Mendapatkan data galeri dengan pagination
+		$galleries = $model->getWithRelations(10);
+
+		// Mengambil pager dari model
+		$pager = $galleries;
 		$data = [
-			'galleries' => $model->paginate(10),
-			'pager' => $model->pager
+			'galleries' => $galleries,
+			'pager' => $pager,
 		];
+
 		return view('admin/gallery/index', $data);
 	}
-	
+
 
 
 	public function create()
@@ -249,7 +256,7 @@ class GalleryController extends BaseController
 			return redirect()->to('/admin/gallery/show/' . $gallery_id)->with('success', 'Gambar berhasil ditambahkan.');
 		} catch (\Exception $e) {
 			// Tangani pengecualian
-			
+
 			return redirect()->back()->withInput()->with('errors', $e->getMessage());
 		}
 	}
@@ -276,7 +283,8 @@ class GalleryController extends BaseController
 			}
 		} catch (\Exception $e) {
 			// Tangani pengecualian
-			var_dump($e->getMessage());die;
+			var_dump($e->getMessage());
+			die;
 			// return redirect()->back()->with('error', $e->getMessage());
 		}
 	}
