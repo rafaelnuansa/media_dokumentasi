@@ -1,0 +1,171 @@
+INFO - 2024-02-04 12:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:16:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-02-04 12:39:38 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dokumentasi', 3307, '', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#4 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(919): session_start()
+#5 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#7 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#8 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#11 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(914): App\Controllers\Home->__construct()
+#13 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#14 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(919): session_start()
+#4 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#5 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#7 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#10 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(914): App\Controllers\Home->__construct()
+#12 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#13 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2024-02-04 12:39:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(919): session_start()
+ 4 SYSTEMPATH\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(693): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+10 APPPATH\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+12 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-04 12:40:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dokumentasi', 3307, '', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#4 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(919): session_start()
+#5 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#7 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#8 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#11 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(914): App\Controllers\Home->__construct()
+#13 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#14 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(919): session_start()
+#4 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#5 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#7 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#10 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(914): App\Controllers\Home->__construct()
+#12 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#13 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2024-02-04 12:40:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(919): session_start()
+ 4 SYSTEMPATH\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(693): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+10 APPPATH\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+12 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-02-04 12:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 12:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:19:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:20:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:23:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:25:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:29:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:36:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:38:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-02-04 17:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

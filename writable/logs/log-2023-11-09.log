@@ -1,0 +1,312 @@
+CRITICAL - 2023-11-09 02:26:34 --> Class "App\Controllers\Admin\BaseController" not found
+in APPPATH/Controllers/Admin/Produk.php on line 9.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/emulated/0/htdocs/web-product/app/Controllers/Admin/Produk.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Produk')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Produk')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\Produk', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 02:44:11 --> Cannot access offset of type string on string
+in APPPATH/Views/detail-produk.php on line 11.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('detail-produk', [], true)
+ 4 APPPATH/Controllers/Produk.php(71): view('detail-produk', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Produk->detail('nama-produk-1')
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 02:55:25 --> Undefined variable $produk
+in APPPATH/Views/detail-produk.php on line 21.
+ 1 APPPATH/Views/detail-produk.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', '/storage/emulated/0/htdocs/web-product/app/Views/detail-produk.php', 21)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/detail-produk.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('detail-produk', [], true)
+ 5 APPPATH/Controllers/Produk.php(71): view('detail-produk', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Produk->detail('nama-produk-1')
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 12:53:04 --> Undefined variable $userSudahLogin
+in APPPATH/Views/template.php on line 30.
+ 1 APPPATH/Views/template.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userSudahLogin', '/storage/emulated/0/htdocs/web-product/app/Views/template.php', 30)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render('template', [], true)
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('user/index', [], true)
+ 6 APPPATH/Controllers/User.php(54): view('user/index', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 12:53:59 --> Undefined property: App\Controllers\Home::$session
+in APPPATH/Controllers/Home.php on line 11.
+ 1 APPPATH/Controllers/Home.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', '/storage/emulated/0/htdocs/web-product/app/Controllers/Home.php', 11)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 12:53:59 --> Undefined property: App\Controllers\Home::$session
+in APPPATH/Controllers/Home.php on line 11.
+ 1 APPPATH/Controllers/Home.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', '/storage/emulated/0/htdocs/web-product/app/Controllers/Home.php', 11)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 12:56:32 --> Undefined variable $userSudahLogin
+in APPPATH/Views/template.php on line 30.
+ 1 APPPATH/Views/template.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userSudahLogin', '/storage/emulated/0/htdocs/web-product/app/Views/template.php', 30)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render('template', [], true)
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('produk', [], true)
+ 6 APPPATH/Controllers/Produk.php(41): view('produk', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Produk->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 12:56:37 --> Undefined variable $userSudahLogin
+in APPPATH/Views/template.php on line 30.
+ 1 APPPATH/Views/template.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userSudahLogin', '/storage/emulated/0/htdocs/web-product/app/Views/template.php', 30)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render('template', [], true)
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('produk', [], true)
+ 6 APPPATH/Controllers/Produk.php(41): view('produk', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Produk->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 12:59:09 --> Undefined variable $userSudahLogin
+in APPPATH/Views/template.php on line 30.
+ 1 APPPATH/Views/template.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userSudahLogin', '/storage/emulated/0/htdocs/web-product/app/Views/template.php', 30)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render('template', [], true)
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('produk', [], true)
+ 6 APPPATH/Controllers/Produk.php(41): view('produk', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Produk->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 13:05:25 --> Undefined variable $userSudahLogin
+in APPPATH/Views/template.php on line 30.
+ 1 APPPATH/Views/template.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userSudahLogin', '/storage/emulated/0/htdocs/web-product/app/Views/template.php', 30)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render('template', [], true)
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('user/profile', [], true)
+ 6 APPPATH/Controllers/Profile.php(47): view('user/profile', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Profile->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 13:06:21 --> Undefined variable $userSudahLogin
+in APPPATH/Views/template.php on line 30.
+ 1 APPPATH/Views/template.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userSudahLogin', '/storage/emulated/0/htdocs/web-product/app/Views/template.php', 30)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render('template', [], true)
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('user/profile', [], true)
+ 6 APPPATH/Controllers/Profile.php(47): view('user/profile', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Profile->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Profile))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:02:57 --> Undefined property: App\Controllers\Orders::$orderModel
+in APPPATH/Controllers/Orders.php on line 74.
+ 1 APPPATH/Controllers/Orders.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Orders::$orderModel', '/storage/emulated/0/htdocs/web-product/app/Controllers/Orders.php', 74)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->prosesOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:05:21 --> Class "App\Controllers\OrderModel" not found
+in APPPATH/Controllers/Orders.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Orders->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:06:09 --> Undefined property: App\Controllers\Orders::$ordesrModel
+in APPPATH/Controllers/Orders.php on line 75.
+ 1 APPPATH/Controllers/Orders.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Orders::$ordesrModel', '/storage/emulated/0/htdocs/web-product/app/Controllers/Orders.php', 75)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->prosesOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:07:03 --> Undefined property: App\Controllers\Orders::$orderModel
+in APPPATH/Controllers/Orders.php on line 30.
+ 1 APPPATH/Controllers/Orders.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Orders::$orderModel', '/storage/emulated/0/htdocs/web-product/app/Controllers/Orders.php', 30)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 14:10:58 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in /storage/emulated/0/htdocs/web-product/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/emulated/0/htdocs/web-product/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `or...', 0)
+#1 /storage/emulated/0/htdocs/web-product/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 /storage/emulated/0/htdocs/web-product/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 /storage/emulated/0/htdocs/web-product/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 /storage/emulated/0/htdocs/web-product/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /storage/emulated/0/htdocs/web-product/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /storage/emulated/0/htdocs/web-product/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /storage/emulated/0/htdocs/web-product/app/Controllers/Orders.php(75): CodeIgniter\Model->insert(Array)
+#8 /storage/emulated/0/htdocs/web-product/system/CodeIgniter.php(942): App\Controllers\Orders->prosesOrder()
+#9 /storage/emulated/0/htdocs/web-product/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#10 /storage/emulated/0/htdocs/web-product/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /storage/emulated/0/htdocs/web-product/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 14:10:58 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `orders` (`user_id`, `nama_produk`, `harga_produk`, `username`, `status_byuser`, `status_byadmin`, `status_pembayaran`, `status_pembelian`, `note_user`, `note_admin`, `date_create`, `created_at`, `updated_at`) VALUES (:user_id:, :nama_produk:, :harga_produk:, :username:, :status_byuser:, :status_byadmin:, :status_pembayaran:, :status_pembelian:, :note_user:, :note_admin:, :date_create:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Orders.php(75): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->prosesOrder()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-09 14:11:56 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in /storage/emulated/0/htdocs/web-product/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/emulated/0/htdocs/web-product/system/Database/MySQLi/Connection.php(306): mysqli->query('INSERT INTO `or...', 0)
+#1 /storage/emulated/0/htdocs/web-product/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `or...')
+#2 /storage/emulated/0/htdocs/web-product/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `or...')
+#3 /storage/emulated/0/htdocs/web-product/system/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `or...', Array, false)
+#4 /storage/emulated/0/htdocs/web-product/system/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 /storage/emulated/0/htdocs/web-product/system/BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 /storage/emulated/0/htdocs/web-product/system/Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 /storage/emulated/0/htdocs/web-product/app/Controllers/Orders.php(75): CodeIgniter\Model->insert(Array)
+#8 /storage/emulated/0/htdocs/web-product/system/CodeIgniter.php(942): App\Controllers\Orders->prosesOrder()
+#9 /storage/emulated/0/htdocs/web-product/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+#10 /storage/emulated/0/htdocs/web-product/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /storage/emulated/0/htdocs/web-product/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-11-09 14:11:56 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `orders` (`user_id`, `nama_produk`, `harga_produk`, `username`, `status_byuser`, `status_byadmin`, `status_pembayaran`, `status_pembelian`, `note_user`, `note_admin`, `created_at`, `updated_at`) VALUES (:user_id:, :nama_produk:, :harga_produk:, :username:, :status_byuser:, :status_byadmin:, :status_pembayaran:, :status_pembelian:, :note_user:, :note_admin:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH/Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH/Controllers/Orders.php(75): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->prosesOrder()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:22:37 --> Undefined property: App\Controllers\Orders::$orderModel
+in APPPATH/Controllers/Orders.php on line 67.
+ 1 APPPATH/Controllers/Orders.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Orders::$orderModel', '/storage/emulated/0/htdocs/web-product/app/Controllers/Orders.php', 67)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->prosesOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 14:41:17 --> Undefined variable $order
+in APPPATH/Views/orders.php on line 9.
+ 1 APPPATH/Views/orders.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', '/storage/emulated/0/htdocs/web-product/app/Views/orders.php', 9)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('orders', [], true)
+ 5 APPPATH/Controllers/Orders.php(46): view('orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 17:58:32 --> Undefined variable $userSudahLogin
+in APPPATH/Views/template.php on line 29.
+ 1 APPPATH/Views/template.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userSudahLogin', '/storage/emulated/0/htdocs/web-product/app/Views/template.php', 29)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render('template', [], true)
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('auth/login', [], true)
+ 6 APPPATH/Controllers/Auth.php(39): view('auth/login', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Auth->login()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 18:00:07 --> Undefined variable $userSudahLogin
+in APPPATH/Views/template.php on line 29.
+ 1 APPPATH/Views/template.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userSudahLogin', '/storage/emulated/0/htdocs/web-product/app/Views/template.php', 29)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render('template', [], true)
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('auth/register', [], true)
+ 6 APPPATH/Controllers/Auth.php(57): view('auth/register', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Auth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 18:36:35 --> Undefined variable $newlyCreatedOrder
+in APPPATH/Views/orders.php on line 21.
+ 1 APPPATH/Views/orders.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newlyCreatedOrder', '/storage/emulated/0/htdocs/web-product/app/Views/orders.php', 21)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('orders', [], true)
+ 5 APPPATH/Controllers/Admin/Orders.php(56): view('orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\admin\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 18:38:17 --> Invalid file: "admin/orders.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/orders.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/orders', [], true)
+ 3 APPPATH/Controllers/Admin/Orders.php(56): view('admin/orders', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\admin\Orders->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Orders))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 18:52:18 --> Cannot use object of type stdClass as array
+in APPPATH/Views/admin/orders/index.php on line 96.
+ 1 SYSTEMPATH/View/View.php(228): include()
+ 2 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/orders/index', [], true)
+ 4 APPPATH/Controllers/Admin/Orders.php(56): view('admin/orders/index', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\admin\Orders->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Orders))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 19:00:58 --> Attempt to read property "bukti_pembayaran" on null
+in APPPATH/Views/orders.php on line 129.
+ 1 APPPATH/Views/orders.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "bukti_pembayaran" on null', '/storage/emulated/0/htdocs/web-product/app/Views/orders.php', 129)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('orders', [], true)
+ 5 APPPATH/Controllers/Orders.php(50): view('orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 19:14:49 --> Attempt to read property "bukti_pembayaran" on null
+in APPPATH/Views/orders.php on line 129.
+ 1 APPPATH/Views/orders.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "bukti_pembayaran" on null', '/storage/emulated/0/htdocs/web-product/app/Views/orders.php', 129)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('orders', [], true)
+ 5 APPPATH/Controllers/Orders.php(50): view('orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 19:19:35 --> Attempt to read property "status_byadmin" on null
+in APPPATH/Views/orders.php on line 137.
+ 1 APPPATH/Views/orders.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status_byadmin" on null', '/storage/emulated/0/htdocs/web-product/app/Views/orders.php', 137)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('orders', [], true)
+ 5 APPPATH/Controllers/Orders.php(50): view('orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-09 19:20:43 --> Attempt to read property "bukti_pembayaran" on null
+in APPPATH/Views/orders.php on line 129.
+ 1 APPPATH/Views/orders.php(129): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "bukti_pembayaran" on null', '/storage/emulated/0/htdocs/web-product/app/Views/orders.php', 129)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('orders', [], true)
+ 5 APPPATH/Controllers/Orders.php(50): view('orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

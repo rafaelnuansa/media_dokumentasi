@@ -1,0 +1,311 @@
+CRITICAL - 2023-11-12 00:02:12 --> Undefined variable $order
+in APPPATH/Views/admin/produk/index.php on line 145.
+ 1 APPPATH/Views/admin/produk/index.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', '/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php', 145)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/produk/index', [], true)
+ 5 APPPATH/Controllers/Admin/Produk.php(39): view('admin/produk/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 00:10:26 --> Undefined array key "Kategori"
+in APPPATH/Views/admin/produk/index.php on line 170.
+ 1 APPPATH/Views/admin/produk/index.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Kategori"', '/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php', 170)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/produk/index', [], true)
+ 5 APPPATH/Controllers/Admin/Produk.php(39): view('admin/produk/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 00:12:17 --> Undefined array key "Status"
+in APPPATH/Views/admin/produk/index.php on line 174.
+ 1 APPPATH/Views/admin/produk/index.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Status"', '/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php', 174)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/produk/index', [], true)
+ 5 APPPATH/Controllers/Admin/Produk.php(39): view('admin/produk/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 00:12:34 --> Undefined array key "Konfirmasiategori"
+in APPPATH/Views/admin/produk/index.php on line 170.
+ 1 APPPATH/Views/admin/produk/index.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Konfirmasiategori"', '/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php', 170)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/produk/index', [], true)
+ 5 APPPATH/Controllers/Admin/Produk.php(39): view('admin/produk/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 00:13:12 --> Undefined array key "Kategori"
+in APPPATH/Views/admin/produk/index.php on line 170.
+ 1 APPPATH/Views/admin/produk/index.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Kategori"', '/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php', 170)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/produk/index', [], true)
+ 5 APPPATH/Controllers/Admin/Produk.php(39): view('admin/produk/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 00:57:01 --> Undefined variable $row
+in APPPATH/Views/admin/orders/index.php on line 137.
+ 1 APPPATH/Views/admin/orders/index.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', '/storage/emulated/0/htdocs/web-product/app/Views/admin/orders/index.php', 137)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/orders/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/orders/index', [], true)
+ 5 APPPATH/Controllers/Admin/Orders.php(56): view('admin/orders/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\admin\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 01:07:37 --> Undefined variable $totalUsers
+in APPPATH/Views/admin/index.php on line 126.
+ 1 APPPATH/Views/admin/index.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalUsers', '/storage/emulated/0/htdocs/web-product/app/Views/admin/index.php', 126)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH/Controllers/Admin/Admin.php(27): view('admin/index')
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 01:08:57 --> Class "App\Controllers\Admin\OrderModel" not found
+in APPPATH/Controllers/Admin/Admin.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\Admin->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 01:10:22 --> Class "App\Controllers\Admin\OrdersModel" not found
+in APPPATH/Controllers/Admin/Admin.php on line 14.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Admin\Admin->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 01:11:11 --> Call to undefined method App\Models\OrdersModel::getDoneOrdersToday
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Admin/Admin.php(32): CodeIgniter\Model->__call('getDoneOrdersToday', [])
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 01:13:53 --> Call to undefined method App\Models\OrdersModel::getDoneOrdersToday
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Admin/Admin.php(32): CodeIgniter\Model->__call('getDoneOrdersToday', [])
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 08:44:19 --> Class "App\Controllers\Admin\BaseController" not found
+in APPPATH/Controllers/Admin/MetodePembayaran.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('/storage/emulated/0/htdocs/web-product/app/Controllers/Admin/MetodePembayaran.php')
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\MetodePembayaran')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\MetodePembayaran')
+ 5 SYSTEMPATH/CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\MetodePembayaran', true)
+ 6 SYSTEMPATH/CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 11:42:11 --> Array to string conversion
+in APPPATH/Views/auth/register.php on line 17.
+ 1 APPPATH/Views/auth/register.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', '/storage/emulated/0/htdocs/web-product/app/Views/auth/register.php', 17)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/auth/register.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('auth/register', [], true)
+ 5 APPPATH/Controllers/Auth.php(52): view('auth/register', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Auth->register()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 11:49:35 --> Attempt to read property "status_byadmin" on null
+in APPPATH/Views/orders.php on line 118.
+ 1 APPPATH/Views/orders.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status_byadmin" on null', '/storage/emulated/0/htdocs/web-product/app/Views/orders.php', 118)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('orders', [], true)
+ 5 APPPATH/Controllers/Orders.php(53): view('orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 11:53:49 --> Attempt to read property "status_byadmin" on null
+in APPPATH/Views/orders.php on line 124.
+ 1 APPPATH/Views/orders.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status_byadmin" on null', '/storage/emulated/0/htdocs/web-product/app/Views/orders.php', 124)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('orders', [], true)
+ 5 APPPATH/Controllers/Orders.php(53): view('orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 11:53:50 --> Attempt to read property "status_byadmin" on null
+in APPPATH/Views/orders.php on line 124.
+ 1 APPPATH/Views/orders.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status_byadmin" on null', '/storage/emulated/0/htdocs/web-product/app/Views/orders.php', 124)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('orders', [], true)
+ 5 APPPATH/Controllers/Orders.php(53): view('orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 15:27:02 --> Invalid file: "user/index.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH/Controllers/User.php(57): view('user/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 15:30:15 --> Invalid file: "user/index.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/index.php')
+ 2 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('user/index', [], true)
+ 3 APPPATH/Controllers/User.php(57): view('user/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 5 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 6 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 18:21:51 --> Call to undefined method App\Models\OrdersModel::getTotalRevenueSuccessOrders
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Admin/Admin.php(35): CodeIgniter\Model->__call('getTotalRevenueSuccessOrders', [])
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 18:22:42 --> Undefined variable $totalRevenueSuccessOrders
+in APPPATH/Views/admin/index.php on line 125.
+ 1 APPPATH/Views/admin/index.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalRevenueSuccessOrders', '/storage/emulated/0/htdocs/web-product/app/Views/admin/index.php', 125)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/index', [], true)
+ 5 APPPATH/Controllers/Admin/Admin.php(44): view('admin/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 18:25:59 --> Call to undefined method App\Models\OrdersModel::getTotalSuccessOrders
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Controllers/Admin/Admin.php(30): CodeIgniter\Model->__call('getTotalSuccessOrders', [])
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 18:28:52 --> Undefined variable $totalPendingOrders
+in APPPATH/Controllers/Admin/Admin.php on line 41.
+ 1 APPPATH/Controllers/Admin/Admin.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalPendingOrders', '/storage/emulated/0/htdocs/web-product/app/Controllers/Admin/Admin.php', 41)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 18:29:31 --> Undefined variable $totalPendingOrders
+in APPPATH/Controllers/Admin/Admin.php on line 42.
+ 1 APPPATH/Controllers/Admin/Admin.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalPendingOrders', '/storage/emulated/0/htdocs/web-product/app/Controllers/Admin/Admin.php', 42)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 18:33:38 --> Undefined variable $totalPendingOrders
+in APPPATH/Controllers/Admin/Admin.php on line 42.
+ 1 APPPATH/Controllers/Admin/Admin.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalPendingOrders', '/storage/emulated/0/htdocs/web-product/app/Controllers/Admin/Admin.php', 42)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 18:58:36 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/metode-pembayaran/index.php on line 103.
+ 1 APPPATH/Views/admin/metode-pembayaran/index.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', '/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php', 103)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/metode-pembayaran/index', [], true)
+ 5 APPPATH/Controllers/Admin/MetodePembayaran.php(30): view('admin/metode-pembayaran/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\MetodePembayaran->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MetodePembayaran))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 19:01:17 --> Attempt to read property "bank" on array
+in APPPATH/Views/admin/metode-pembayaran/index.php on line 103.
+ 1 APPPATH/Views/admin/metode-pembayaran/index.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "bank" on array', '/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php', 103)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/metode-pembayaran/index', [], true)
+ 5 APPPATH/Controllers/Admin/MetodePembayaran.php(30): view('admin/metode-pembayaran/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\MetodePembayaran->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MetodePembayaran))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 19:02:36 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/metode-pembayaran/index.php on line 103.
+ 1 APPPATH/Views/admin/metode-pembayaran/index.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', '/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php', 103)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/metode-pembayaran/index', [], true)
+ 5 APPPATH/Controllers/Admin/MetodePembayaran.php(30): view('admin/metode-pembayaran/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\MetodePembayaran->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MetodePembayaran))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 19:03:24 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/metode-pembayaran/index.php on line 103.
+ 1 APPPATH/Views/admin/metode-pembayaran/index.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', '/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php', 103)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/metode-pembayaran/index', [], true)
+ 5 APPPATH/Controllers/Admin/MetodePembayaran.php(30): view('admin/metode-pembayaran/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\MetodePembayaran->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MetodePembayaran))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 19:03:35 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/metode-pembayaran/index.php on line 103.
+ 1 APPPATH/Views/admin/metode-pembayaran/index.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', '/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php', 103)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/metode-pembayaran/index', [], true)
+ 5 APPPATH/Controllers/Admin/MetodePembayaran.php(30): view('admin/metode-pembayaran/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\MetodePembayaran->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MetodePembayaran))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 19:06:42 --> Attempt to read property "id" on array
+in APPPATH/Views/admin/metode-pembayaran/index.php on line 107.
+ 1 APPPATH/Views/admin/metode-pembayaran/index.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on array', '/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php', 107)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/metode-pembayaran/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/metode-pembayaran/index', [], true)
+ 5 APPPATH/Controllers/Admin/MetodePembayaran.php(30): view('admin/metode-pembayaran/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\MetodePembayaran->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\MetodePembayaran))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 19:37:13 --> Undefined variable $web_author
+in APPPATH/Views/template.php on line 10.
+ 1 APPPATH/Views/template.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $web_author', '/storage/emulated/0/htdocs/web-product/app/Views/template.php', 10)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render('template', [], true)
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('auth/login', [], true)
+ 6 APPPATH/Controllers/Auth.php(35): view('auth/login', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Auth->login()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-12 19:41:01 --> Undefined variable $web_author
+in APPPATH/Views/template.php on line 10.
+ 1 APPPATH/Views/template.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $web_author', '/storage/emulated/0/htdocs/web-product/app/Views/template.php', 10)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/template.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(244): CodeIgniter\View\View->render('template', [], true)
+ 5 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('produk', [], true)
+ 6 APPPATH/Controllers/Produk.php(44): view('produk', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Produk->index()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

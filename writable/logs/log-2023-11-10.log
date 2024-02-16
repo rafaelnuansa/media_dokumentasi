@@ -1,0 +1,78 @@
+CRITICAL - 2023-11-10 08:34:47 --> Undefined variable $orders
+in APPPATH/Views/user/history.php on line 39.
+ 1 APPPATH/Views/user/history.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $orders', '/storage/emulated/0/htdocs/web-product/app/Views/user/history.php', 39)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/user/history.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('user/history', [], true)
+ 5 APPPATH/Controllers/History.php(50): view('user/history', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\History->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\History))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 21:21:02 --> Undefined array key "id"
+in APPPATH/Views/admin/produk/index.php on line 74.
+ 1 APPPATH/Views/admin/produk/index.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php', 74)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/produk/index', [], true)
+ 5 APPPATH/Controllers/Admin/Produk.php(32): view('admin/produk/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 21:31:12 --> Undefined variable $gambarProdukModel
+in APPPATH/Views/admin/produk/index.php on line 48.
+ 1 APPPATH/Views/admin/produk/index.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $gambarProdukModel', '/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php', 48)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/produk/index', [], true)
+ 5 APPPATH/Controllers/Admin/Produk.php(32): view('admin/produk/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 21:34:31 --> Undefined variable $produk
+in APPPATH/Views/admin/produk/index.php on line 44.
+ 1 APPPATH/Views/admin/produk/index.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', '/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php', 44)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/produk/index', [], true)
+ 5 APPPATH/Controllers/Admin/Produk.php(38): view('admin/produk/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 21:34:59 --> Undefined array key "produk_id"
+in APPPATH/Views/admin/produk/index.php on line 48.
+ 1 APPPATH/Views/admin/produk/index.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "produk_id"', '/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php', 48)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/produk/index', [], true)
+ 5 APPPATH/Controllers/Admin/Produk.php(39): view('admin/produk/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 21:36:10 --> Undefined array key "produk_id"
+in APPPATH/Views/admin/produk/index.php on line 48.
+ 1 APPPATH/Views/admin/produk/index.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "produk_id"', '/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php', 48)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-product/app/Views/admin/produk/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('admin/produk/index', [], true)
+ 5 APPPATH/Controllers/Admin/Produk.php(39): view('admin/produk/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 21:58:33 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/Admin/Produk.php on line 132.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->update('14')
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 22:03:55 --> Call to a member function isValid() on array
+in APPPATH/Controllers/Admin/Produk.php on line 144.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Admin\Produk->update('14')
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Produk))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,205 @@
+ERROR - 2024-01-23 09:51:49 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dokumentasi' in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dokumentasi', 3306, '', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#4 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(919): session_start()
+#5 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#7 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#8 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#11 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(914): App\Controllers\Home->__construct()
+#13 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#14 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dokumentasi' in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(919): session_start()
+#4 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#5 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#7 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#10 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(914): App\Controllers\Home->__construct()
+#12 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#13 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2024-01-23 09:51:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dokumentasi'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(919): session_start()
+ 4 SYSTEMPATH\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(693): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+10 APPPATH\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+12 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-23 09:54:43 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dokumentasi' in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dokumentasi', 3306, '', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#4 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(919): session_start()
+#5 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#7 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#8 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#11 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(914): App\Controllers\Home->__construct()
+#13 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#14 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dokumentasi' in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(919): session_start()
+#4 C:\xampp8\htdocs\dokumentasi_new\system\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+#5 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(693): CodeIgniter\Session\Session->start()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+#7 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp8\htdocs\dokumentasi_new\system\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 C:\xampp8\htdocs\dokumentasi_new\system\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+#10 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(914): App\Controllers\Home->__construct()
+#12 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+#13 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2024-01-23 09:54:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dokumentasi'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(98): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('ci_sessions', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(919): session_start()
+ 4 SYSTEMPATH\Session\Session.php(241): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(693): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 7 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(664): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::session()
+10 APPPATH\Controllers\Home.php(14): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+12 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 10:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 13:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 13:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 13:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 13:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 13:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 13:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 13:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 13:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 13:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 13:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2024-01-23 14:25:45 --> syntax error, unexpected token ","
+in APPPATH\Controllers\Admin\Files.php on line 121.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Controllers\\Admin\\Files.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Files')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Files')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\Files', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-23 14:26:03 --> syntax error, unexpected token "if", expecting "]"
+in APPPATH\Controllers\Admin\Files.php on line 130.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Controllers\\Admin\\Files.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Files')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Files')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\Files', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-23 14:27:01 --> syntax error, unexpected token "if", expecting "]"
+in APPPATH\Controllers\Admin\Files.php on line 130.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Controllers\\Admin\\Files.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Files')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Files')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\Files', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-23 14:27:18 --> syntax error, unexpected token "=>"
+in APPPATH\Controllers\Admin\Files.php on line 124.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Controllers\\Admin\\Files.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\Files')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\Files')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\Files', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 14:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:28:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:35:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2024-01-23 14:54:13 --> mysqli_sql_exception: Operand should contain 1 column(s) in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `fi...', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `fi...')
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `fi...')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `fi...', Array, false)
+#4 C:\xampp8\htdocs\dokumentasi_new\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp8\htdocs\dokumentasi_new\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp8\htdocs\dokumentasi_new\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Admin\Files.php(141): CodeIgniter\Model->insert(Array)
+#8 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(942): App\Controllers\Admin\Files->store()
+#9 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Files))
+#10 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-23 14:54:13 --> Operand should contain 1 column(s)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `files` (`nama`, `slug`, `deskripsi`, `fotografer`, `kategori`, `status`, `keyword`, `date_create`, `date_kegiatan`) VALUES (:nama:, :slug:, :deskripsi:, :fotografer:, :kategori:, :status:, :keyword:, :date_create:, :date_kegiatan:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin\Files.php(141): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\Files->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Files))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-23 14:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 14:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 15:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2024-01-23 15:04:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

@@ -1,0 +1,183 @@
+CRITICAL - 2023-11-06 08:25:07 --> Undefined variable $orderModel
+in APPPATH/Controllers/User.php on line 33.
+ 1 APPPATH/Controllers/User.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $orderModel', '/storage/emulated/0/htdocs/web-otp/app/Controllers/User.php', 33)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-06 08:26:02 --> mysqli_sql_exception: Operand should contain 1 column(s) in /storage/emulated/0/htdocs/web-otp/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/emulated/0/htdocs/web-otp/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /storage/emulated/0/htdocs/web-otp/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /storage/emulated/0/htdocs/web-otp/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /storage/emulated/0/htdocs/web-otp/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /storage/emulated/0/htdocs/web-otp/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 /storage/emulated/0/htdocs/web-otp/app/Models/OrderModel.php(82): CodeIgniter\Model->countAllResults()
+#6 /storage/emulated/0/htdocs/web-otp/app/Controllers/User.php(35): App\Models\OrderModel->getTotalOrderByUser(Array)
+#7 /storage/emulated/0/htdocs/web-otp/system/CodeIgniter.php(942): App\Controllers\User->index()
+#8 /storage/emulated/0/htdocs/web-otp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 /storage/emulated/0/htdocs/web-otp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /storage/emulated/0/htdocs/web-otp/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-06 08:26:02 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `orders`
+WHERE `user_id` = :user_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH/Models/OrderModel.php(82): CodeIgniter\Model->countAllResults()
+ 4 APPPATH/Controllers/User.php(35): App\Models\OrderModel->getTotalOrderByUser([...])
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 08:29:58 --> Undefined variable $userData
+in APPPATH/Models/OrderModel.php on line 82.
+ 1 APPPATH/Models/OrderModel.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userData', '/storage/emulated/0/htdocs/web-otp/app/Models/OrderModel.php', 82)
+ 2 APPPATH/Controllers/User.php(34): App\Models\OrderModel->getTotalOrderByUser([...])
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-06 08:30:20 --> mysqli_sql_exception: Operand should contain 1 column(s) in /storage/emulated/0/htdocs/web-otp/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/emulated/0/htdocs/web-otp/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /storage/emulated/0/htdocs/web-otp/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /storage/emulated/0/htdocs/web-otp/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /storage/emulated/0/htdocs/web-otp/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /storage/emulated/0/htdocs/web-otp/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 /storage/emulated/0/htdocs/web-otp/app/Models/OrderModel.php(82): CodeIgniter\Model->countAllResults()
+#6 /storage/emulated/0/htdocs/web-otp/app/Controllers/User.php(34): App\Models\OrderModel->getTotalOrderByUser(Array)
+#7 /storage/emulated/0/htdocs/web-otp/system/CodeIgniter.php(942): App\Controllers\User->index()
+#8 /storage/emulated/0/htdocs/web-otp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 /storage/emulated/0/htdocs/web-otp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /storage/emulated/0/htdocs/web-otp/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-06 08:30:20 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `orders`
+WHERE `user_id` = :user_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH/Models/OrderModel.php(82): CodeIgniter\Model->countAllResults()
+ 4 APPPATH/Controllers/User.php(34): App\Models\OrderModel->getTotalOrderByUser([...])
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-06 08:30:37 --> mysqli_sql_exception: Operand should contain 1 column(s) in /storage/emulated/0/htdocs/web-otp/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /storage/emulated/0/htdocs/web-otp/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /storage/emulated/0/htdocs/web-otp/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /storage/emulated/0/htdocs/web-otp/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /storage/emulated/0/htdocs/web-otp/system/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /storage/emulated/0/htdocs/web-otp/system/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 /storage/emulated/0/htdocs/web-otp/app/Models/OrderModel.php(82): CodeIgniter\Model->countAllResults()
+#6 /storage/emulated/0/htdocs/web-otp/app/Controllers/User.php(34): App\Models\OrderModel->getTotalOrderByUser(Array)
+#7 /storage/emulated/0/htdocs/web-otp/system/CodeIgniter.php(942): App\Controllers\User->index()
+#8 /storage/emulated/0/htdocs/web-otp/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 /storage/emulated/0/htdocs/web-otp/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /storage/emulated/0/htdocs/web-otp/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-11-06 08:30:37 --> Operand should contain 1 column(s)
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `orders`
+WHERE `user_id` = :user_id:', [...], false)
+ 2 SYSTEMPATH/Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH/Models/OrderModel.php(82): CodeIgniter\Model->countAllResults()
+ 4 APPPATH/Controllers/User.php(34): App\Models\OrderModel->getTotalOrderByUser([...])
+ 5 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 6 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 14:24:46 --> Trying to access array offset on value of type int
+in APPPATH/Controllers/User.php on line 56.
+ 1 APPPATH/Controllers/User.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', '/storage/emulated/0/htdocs/web-otp/app/Controllers/User.php', 56)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 14:31:21 --> Undefined variable $depotisModel
+in APPPATH/Controllers/User.php on line 49.
+ 1 APPPATH/Controllers/User.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $depotisModel', '/storage/emulated/0/htdocs/web-otp/app/Controllers/User.php', 49)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 14:38:28 --> Call to undefined method App\Models\OrderModel::sum
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Models/OrderModel.php(87): CodeIgniter\Model->__call('sum', [...])
+ 2 APPPATH/Controllers/User.php(50): App\Models\OrderModel->getTotalPriceByUserAndStatus('8')
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 14:40:40 --> Call to undefined method App\Models\OrderModel::sum
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Models/OrderModel.php(87): CodeIgniter\Model->__call('sum', [...])
+ 2 APPPATH/Controllers/User.php(47): App\Models\OrderModel->getTotalPriceByUserAndStatus('8')
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 14:41:28 --> Call to undefined method App\Models\OrderModel::sum
+in SYSTEMPATH/Model.php on line 873.
+ 1 APPPATH/Models/OrderModel.php(87): CodeIgniter\Model->__call('sum', [...])
+ 2 APPPATH/Controllers/User.php(47): App\Models\OrderModel->getTotalPriceByUserAndStatus('8')
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 14:50:30 --> Undefined property: stdClass::$total_price
+in APPPATH/Models/DepositModel.php on line 33.
+ 1 APPPATH/Models/DepositModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$total_price', '/storage/emulated/0/htdocs/web-otp/app/Models/DepositModel.php', 33)
+ 2 APPPATH/Controllers/User.php(51): App\Models\DepositModel->getTotalDepositByUserAndStatus('8')
+ 3 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\User->index()
+ 4 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 18:30:10 --> Call to a member function has() on null
+in APPPATH/Controllers/History.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\History->index()
+ 2 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\History))
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-06 20:09:03 --> Error: Data tidak valid dari API
+ERROR - 2023-11-06 20:13:28 --> Error: Data tidak valid dari API
+CRITICAL - 2023-11-06 20:17:21 --> Undefined array key "error_message"
+in APPPATH/Controllers/Orders.php on line 168.
+ 1 APPPATH/Controllers/Orders.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error_message"', '/storage/emulated/0/htdocs/web-otp/app/Controllers/Orders.php', 168)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->placeOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 20:17:57 --> Undefined array key "error_message"
+in APPPATH/Controllers/Orders.php on line 168.
+ 1 APPPATH/Controllers/Orders.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "error_message"', '/storage/emulated/0/htdocs/web-otp/app/Controllers/Orders.php', 168)
+ 2 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->placeOrder()
+ 3 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 4 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 20:39:30 --> Undefined variable $counter
+in APPPATH/Views/user/orders.php on line 76.
+ 1 APPPATH/Views/user/orders.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $counter', '/storage/emulated/0/htdocs/web-otp/app/Views/user/orders.php', 76)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-otp/app/Views/user/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('user/orders', [], true)
+ 5 APPPATH/Controllers/Orders.php(67): view('user/orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-06 20:41:04 --> Undefined variable $order
+in APPPATH/Views/user/orders.php on line 76.
+ 1 APPPATH/Views/user/orders.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $order', '/storage/emulated/0/htdocs/web-otp/app/Views/user/orders.php', 76)
+ 2 SYSTEMPATH/View/View.php(228): include('/storage/emulated/0/htdocs/web-otp/app/Views/user/orders.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('user/orders', [], true)
+ 5 APPPATH/Controllers/Orders.php(67): view('user/orders', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\Orders->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Orders))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

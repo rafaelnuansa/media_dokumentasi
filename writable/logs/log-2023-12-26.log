@@ -1,0 +1,98 @@
+INFO - 2023-12-26 10:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 10:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 10:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 10:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 11:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 11:26:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 11:58:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 12:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 12:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 12:30:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 12:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-12-26 14:40:35 --> Undefined variable $web_title
+in APPPATH\Views\template_admin.php on line 8.
+ 1 APPPATH\Views\template_admin.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $web_title', 'C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Views\\template_admin.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Views\\template_admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('template_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/setings', [], true)
+ 6 APPPATH\Controllers\Admin\SettingsWeb.php(31): view('admin/setings', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\SettingsWeb->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SettingsWeb))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-26 14:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-12-26 14:43:20 --> Undefined variable $files_histori
+in APPPATH\Views\template_admin.php on line 80.
+ 1 APPPATH\Views\template_admin.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $files_histori', 'C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Views\\template_admin.php', 80)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Views\\template_admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('template_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/setings', [], true)
+ 6 APPPATH\Controllers\Admin\SettingsWeb.php(43): view('admin/setings', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\SettingsWeb->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SettingsWeb))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-26 14:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-12-26 14:43:38 --> Undefined variable $settings
+in APPPATH\Views\admin\setings.php on line 27.
+ 1 APPPATH\Views\admin\setings.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $settings', 'C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Views\\admin\\setings.php', 27)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Views\\admin\\setings.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/setings', [], true)
+ 5 APPPATH\Controllers\Admin\SettingsWeb.php(43): view('admin/setings', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\SettingsWeb->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SettingsWeb))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-26 14:44:52 --> syntax error, unexpected token "/"
+in APPPATH\Controllers\Admin\SettingsWeb.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Controllers\\Admin\\SettingsWeb.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\SettingsWeb')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\SettingsWeb')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\SettingsWeb', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-26 14:45:00 --> syntax error, unexpected token "/"
+in APPPATH\Controllers\Admin\SettingsWeb.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Controllers\\Admin\\SettingsWeb.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin\\SettingsWeb')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin\\SettingsWeb')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Admin\\SettingsWeb', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-26 14:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-12-26 14:45:14 --> Undefined variable $files_histori
+in APPPATH\Views\template_admin.php on line 80.
+ 1 APPPATH\Views\template_admin.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $files_histori', 'C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Views\\template_admin.php', 80)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp8\\htdocs\\dokumentasi_new\\app\\Views\\template_admin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('template_admin', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/setings', [], true)
+ 6 APPPATH\Controllers\Admin\SettingsWeb.php(44): view('admin/setings', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\SettingsWeb->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SettingsWeb))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-26 14:46:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-12-26 14:53:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

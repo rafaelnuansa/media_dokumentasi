@@ -1,0 +1,134 @@
+INFO - 2023-11-23 14:00:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-23 14:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-23 14:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-23 14:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-23 14:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-11-23 14:12:24 --> mysqli_sql_exception: Unknown column 'id' in 'field list' in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(`i...', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 C:\xampp8\htdocs\dokumentasi_new\app\Models\OrdersModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Admin\Admin.php(41): App\Models\OrdersModel->getTotalFotoPublish()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+#7 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+#8 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-23 14:12:24 --> Unknown column 'id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `total_foto_publish`
+FROM `files`
+WHERE `status_pembelian` = :status_pembelian:
+AND DATE(date_create) = :DATE(date_create):', [...], false)
+ 2 APPPATH\Models\OrdersModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\Admin.php(41): App\Models\OrdersModel->getTotalFotoPublish()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 14:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-11-23 14:13:25 --> mysqli_sql_exception: Unknown column 'id' in 'field list' in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(`i...', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 C:\xampp8\htdocs\dokumentasi_new\app\Models\OrdersModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Admin\Admin.php(41): App\Models\OrdersModel->getTotalFotoPublish()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+#7 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+#8 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-23 14:13:25 --> Unknown column 'id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `total_foto_publish`
+FROM `files`
+WHERE `status_pembelian` = :status_pembelian:
+AND DATE(date_create) = :DATE(date_create):', [...], false)
+ 2 APPPATH\Models\OrdersModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\Admin.php(41): App\Models\OrdersModel->getTotalFotoPublish()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 14:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-11-23 14:15:04 --> mysqli_sql_exception: Unknown column 'id' in 'field list' in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(`i...', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 C:\xampp8\htdocs\dokumentasi_new\app\Models\OrdersModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Admin\Admin.php(41): App\Models\OrdersModel->getTotalFotoPublish()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+#7 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+#8 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-23 14:15:04 --> Unknown column 'id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `total_foto_publish`
+FROM `files`
+WHERE `status_pembelian` = :status_pembelian:
+AND DATE(date_create) = :DATE(date_create):', [...], false)
+ 2 APPPATH\Models\OrdersModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\Admin.php(41): App\Models\OrdersModel->getTotalFotoPublish()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 14:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-11-23 14:15:22 --> mysqli_sql_exception: Unknown column 'id' in 'field list' in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(`i...', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 C:\xampp8\htdocs\dokumentasi_new\app\Models\OrdersModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Admin\Admin.php(41): App\Models\OrdersModel->getTotalFotoPublish()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+#7 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+#8 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-23 14:15:22 --> Unknown column 'id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `total_foto_publish`
+FROM `files`', [], false)
+ 2 APPPATH\Models\OrdersModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\Admin.php(41): App\Models\OrdersModel->getTotalFotoPublish()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 14:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-11-23 14:27:21 --> mysqli_sql_exception: Unknown column 'id' in 'field list' in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(`i...', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 C:\xampp8\htdocs\dokumentasi_new\app\Models\OrdersModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Admin\Admin.php(41): App\Models\OrdersModel->getTotalFotoPublish()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+#7 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+#8 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-23 14:27:21 --> Unknown column 'id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `total_foto_publish`
+FROM `files`', [], false)
+ 2 APPPATH\Models\OrdersModel.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\Admin.php(41): App\Models\OrdersModel->getTotalFotoPublish()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-23 14:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-23 14:28:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-23 14:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-23 14:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.

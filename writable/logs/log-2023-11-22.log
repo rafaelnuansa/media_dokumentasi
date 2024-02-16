@@ -1,0 +1,45 @@
+INFO - 2023-11-22 19:33:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-22 19:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-22 19:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-22 19:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-22 19:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+INFO - 2023-11-22 19:41:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-11-22 19:41:38 --> Class "App\Controllers\Admin\DashboardModel" not found
+in APPPATH\Controllers\Admin\Admin.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Admin\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-22 19:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+CRITICAL - 2023-11-22 19:42:25 --> Class "App\Controllers\Admin\DashboardModel" not found
+in APPPATH\Controllers\Admin\Admin.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Admin\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-22 19:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
+ERROR - 2023-11-22 19:42:51 --> mysqli_sql_exception: Unknown column 'id' in 'field list' in C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp8\htdocs\dokumentasi_new\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(`i...', 0)
+#1 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(`i...')
+#2 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(`i...')
+#3 C:\xampp8\htdocs\dokumentasi_new\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`i...', Array, false)
+#4 C:\xampp8\htdocs\dokumentasi_new\app\Models\DashboardModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\dokumentasi_new\app\Controllers\Admin\Admin.php(32): App\Models\DashboardModel->getTotalUpload()
+#6 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+#7 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+#8 C:\xampp8\htdocs\dokumentasi_new\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\dokumentasi_new\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-22 19:42:52 --> Unknown column 'id' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(`id`) AS `total_upload`
+FROM `files`
+WHERE DATE(date_create) = :DATE(date_create):', [...], false)
+ 2 APPPATH\Models\DashboardModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Admin\Admin.php(32): App\Models\DashboardModel->getTotalUpload()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin\Admin->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-22 19:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\DatabaseHandler' driver.
