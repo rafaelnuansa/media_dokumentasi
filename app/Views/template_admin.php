@@ -97,14 +97,14 @@
         <!-- Page Sidebar Start-->
         <div class="page-sidebar">
             <div class="main-header-left d-none d-lg-block">
-                <div class="logo-wrapper"><a href="index.html"><img class="blur-up lazyloaded" width="140" height="72" data-sticky-width="140" data-sticky-height="72" src="<?= base_url('public/img/web/' . esc($web_logo ?? '')) ?>" alt=""></a></div>
+                <div class="logo-wrapper"><a href="#"><img class="blur-up lazyloaded" width="140" height="72" data-sticky-width="140" data-sticky-height="72" src="<?= base_url('public/img/web/' . esc($web_logo ?? '')) ?>" alt=""></a></div>
             </div>
             <div class="sidebar custom-scrollbar">
                 <ul class="sidebar-menu">
                     <li><a class="sidebar-header" href="<?= base_url(); ?>/admin"><span>Dashboard</span></a></li>
                     <li><a class="sidebar-header" href="<?= base_url(); ?>admin/gallery"><span>Galeri Foto KeMitraan</span></a></li>
                     <li><a class="sidebar-header" href="<?= base_url(); ?>admin/youtube"><span>Galeri Youtube</span></a></li>
-                    <li><a class="sidebar-header" href="<?= base_url(); ?>admin/documents"><span>Galeri Dokumen</span></a></li>
+                    <li><a class="sidebar-header" href="<?= base_url(); ?>admin/dokumen"><span>Galeri Dokumen</span></a></li>
                     <li><a class="sidebar-header" href="<?= base_url(); ?>admin/user"><span>User</span></a></li>
                     <li><a class="sidebar-header" href="<?= base_url(); ?>admin/settings-web"><span>Seting</span></a></li>
 

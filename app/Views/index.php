@@ -83,7 +83,7 @@
                         <div class="row">
                             <div class="col-lg-4 col-sm-6 col-xs-12">
                                <div class="services" >
-                                   <a href="<?= base_url(); ?>files" target='_blank'>
+                                   <a href="<?= base_url('dokumen'); ?>" target='_blank'>
                                         <div class="img-wrap"><img src="<?= base_url('public/pusdok/images/galeri_foto_biru.png') ?>" class="img" alt=""></div>
                                         <div class="content">
                                         <u><h4 class="title">Galeri Dokumen</h4></u>
@@ -107,7 +107,7 @@
 
                             <div class="col-lg-4 col-sm-6 col-xs-12">
                                <div class="services" >
-                                   <a href="<?= base_url(); ?>files-mitra" target="blank_">
+                                   <a href="<?= base_url('gallery'); ?>" target="blank_">
                                         <div class="img-wrap"><img src="<?= base_url('public/pusdok/images/galeri_infografis_biru.png') ?>" class="img" alt=""></div>
                                         <div class="content">
                                         <u><h4 class="title">KEGIATAN KEMITRAAN</h4></u>

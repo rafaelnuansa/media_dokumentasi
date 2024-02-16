@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="col">
 			<h2 class="my-4">Edit Galeri</h2>
-			<form action="<?= base_url('admin/gallery/update/' . $gallery['id']) ?>" method="post">
+			<form action="<?= base_url('admin/gallery/update/' . $gallery['id']) ?>" enctype="multipart/form-data" method="post">
 				<div class="mb-3">
 					<label for="nama" class="form-label">Nama</label>
 					<input type="text" class="form-control" id="nama" name="nama" value="<?= $gallery['nama'] ?>" required>
@@ -36,7 +36,7 @@
 					</select>
 				</div>
 				<div class="mb-3">
-					<label for="kategori_id" class="form-label">ID Kategori</label>
+					<label for="kategori_id" class="form-label">Kategori</label>
 					<select class="form-select" id="kategori_id" name="kategori_id" required>
 						<?php foreach ($categories as $category) : ?>
 							<option value="<?= $category['id'] ?>" <?= $category['id'] === $gallery['kategori_id'] ? 'selected' : '' ?>><?= $category['nama'] ?></option>
@@ -50,7 +50,10 @@
 						<option value="draft" <?= $gallery['status'] === 'draft' ? 'selected' : '' ?>>Draft</option>
 					</select>
 				</div>
-				
+				<div class="mb-3">
+					<label for="thumbnail" class="form-label">Thumbnail * 1 File Image</label>
+					<input type="file" class="form-control" id="thumbnail" name="thumbnail" accept="image/*">
+				</div>
 				<button type="submit" class="btn btn-primary">Simpan</button>
 			</form>
 		</div>

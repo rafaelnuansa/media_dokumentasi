@@ -82,6 +82,20 @@ $routes->get('admin/files/download/(:num)', 'Admin\Files::download/$1');
 // $routes->get('admin/files-mitra/unpublish/(:num)', 'Admin\FilesMitra::unpublish/$1');
 // $routes->get('admin/files-mitra/download/(:num)', 'Admin\FilesMitra::download/$1');
 
+
+$routes->get('admin/dokumen', 'Admin\DokumenController::index');
+$routes->get('admin/dokumen/create', 'Admin\DokumenController::create');
+$routes->post('admin/dokumen/store', 'Admin\DokumenController::store');
+$routes->get('admin/dokumen/edit/(:num)', 'Admin\DokumenController::edit/$1');
+$routes->post('admin/dokumen/update/(:num)', 'Admin\DokumenController::update/$1');
+
+$routes->delete('admin/dokumen/delete/(:num)', 'Admin\DokumenController::delete/$1');
+$routes->get('admin/dokumen/show/(:num)', 'Admin\DokumenController::show/$1');
+$routes->post('admin/dokumen/addFile/(:num)', 'Admin\DokumenController::addFileDokumen/$1');
+$routes->get('admin/dokumen/deleteFile/(:num)', 'Admin\DokumenController::deleteFileDokumen/$1');
+$routes->get('admin/dokumen/download/(:num)', 'Admin\DokumenController::download/$1');
+
+
 // User //
 $routes->get('admin/user', 'Admin\User::index');
 $routes->post('admin/user/create/(:num)', 'Admin\User::create/$1');
@@ -113,3 +127,13 @@ $routes->post('admin/gallery/addImageGallery/(:num)', 'Admin\GalleryController::
 
 // Hapus gambar dari galeri
 $routes->delete('admin/gallery/deleteImageGallery/(:num)/(:num)', 'Admin\GalleryController::deleteImageGallery/$1/$2');
+
+$routes->get('admin/gallery/download/(:num)', 'Admin\GalleryController::download/$1');
+
+
+
+$routes->get('/gallery', 'GalleryController::index');
+$routes->get('/gallery/(:segment)', 'GalleryController::detail/$1');
+
+$routes->get('/dokumen', 'DokumenController::index');
+$routes->get('/dokumen/(:segment)', 'DokumenController::detail/$1');

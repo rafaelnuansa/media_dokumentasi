@@ -10,6 +10,13 @@ use App\Models\UserModel;
 
 class GalleryController extends BaseController
 {
+
+	protected $session;
+
+	public function __construct()
+	{
+		$this->session = \Config\Services::session();
+	}
 	public function index()
 	{
 		$model = new GalleryModel();
@@ -33,8 +40,9 @@ class GalleryController extends BaseController
 	{
 		$userModel = new UserModel();
 		$categoryModel = new CategoryModel();
+		$users = $userModel->where('role', 2)->findAll();
 
-		$data['users'] = $userModel->findAll();
+		$data['users'] = $users;
 		$data['categories'] = $categoryModel->findAll();
 
 		return view('admin/gallery/create', $data);
@@ -137,7 +145,9 @@ class GalleryController extends BaseController
 		$userModel = new UserModel();
 
 		$data['categories'] = $categoryModel->findAll();
-		$data['users'] = $userModel->findAll();
+		$users = $userModel->where('role', 2)->findAll();
+
+		$data['users'] = $users;
 		$data['gallery'] = $model->find($id);
 		if ($data['gallery'] === null) {
 			return redirect()->to('/admin/gallery')->with('errors', 'Galeri tidak ditemukan.');
@@ -185,14 +195,15 @@ class GalleryController extends BaseController
 				'user_id' => 'required|integer',
 				'kategori_id' => 'required|integer',
 				'status' => 'required',
-				'thumbnail' => 'is_image[thumbnail]|mime_in[thumbnail,image/jpeg,image/jpg,image/png,image/webp]',
-				'image' => [
-					'rules' => 'max_size[image,1024]|is_image[image]|mime_in[image,image/jpeg,image/jpg,image/png,image/webp]',
-				]
+				'thumbnail' => 'is_image[thumbnail]|mime_in[thumbnail,image/jpeg,image/jpg,image/png,image/webp]|max_size[thumbnail,4096]',
+
 			]);
 
 			if (!$validation->withRequest($this->request)->run()) {
-				return redirect()->to('/admin/gallery/edit/' . $id)->withInput()->with('errors', $validation->getErrors());
+				print_r($validation->getErrors());
+				die;
+				$this->session->setFlashdata('error', $validation->getErrors());
+				return redirect()->to('/admin/gallery/edit/' . $id);
 			}
 
 			// Ambil data galeri dari database
@@ -201,6 +212,11 @@ class GalleryController extends BaseController
 			// Ambil file thumbnail jika diisi
 			$thumbnail = $this->request->getFile('thumbnail');
 			if ($thumbnail->isValid() && !$thumbnail->hasMoved()) {
+				// Hapus thumbnail lama jika ada
+				if ($gallery['thumbnail'] && file_exists('img/files_mitra/' . $gallery['thumbnail'])) {
+					unlink('img/files_mitra/' . $gallery['thumbnail']);
+				}
+				// Pindahkan file thumbnail baru
 				$thumbName = $thumbnail->getRandomName();
 				$thumbnail->move('img/files_mitra', $thumbName);
 			} else {
@@ -229,6 +245,7 @@ class GalleryController extends BaseController
 			return redirect()->back()->withInput()->with('error', $e->getMessage());
 		}
 	}
+
 
 	public function addImageGallery($gallery_id)
 	{
@@ -329,6 +346,55 @@ class GalleryController extends BaseController
 		} catch (\Exception $e) {
 			// Tangani pengecualian
 			return redirect()->back()->with('error', $e->getMessage());
+		}
+	}
+
+	public function download($id)
+	{
+		$model = new GalleryModel();
+		$imageModel = new GalleryImageModel();
+
+		// Fetch the gallery data from the database
+		$gallery = $model->find($id);
+
+		if (!$gallery) {
+			return redirect()->back()->with('error', 'Gallery not found.');
+		}
+
+		// Fetch the images associated with the gallery
+		$images = $imageModel->where('gallery_id', $id)->findAll();
+
+		// Create a new zip archive
+		$zip = new \ZipArchive();
+
+		// Create a temporary zip file path
+		$zipFilePath = 'uploads/gallery_' . $gallery['id'] . '.zip';
+
+		if ($zip->open($zipFilePath, \ZipArchive::CREATE | \ZipArchive::OVERWRITE) === TRUE) {
+			// Add each image file to the zip archive
+			foreach ($images as $image) {
+				$imagePath = 'img/files_mitra/' . $image['image'];
+				if (file_exists($imagePath)) {
+					$zip->addFile($imagePath, $image['image']);
+				}
+			}
+
+			// Close the zip archive
+			$zip->close();
+
+			// Set the appropriate headers for file download
+			header('Content-Type: application/zip');
+			header('Content-Disposition: attachment; filename="' . basename($zipFilePath) . '"');
+			header('Content-Length: ' . filesize($zipFilePath));
+			readfile($zipFilePath);
+
+			// Delete the temporary zip file
+			unlink($zipFilePath);
+
+			// Terminate the script after file download
+			exit();
+		} else {
+			return redirect()->back()->with('error', 'Failed to create zip archive.');
 		}
 	}
 }

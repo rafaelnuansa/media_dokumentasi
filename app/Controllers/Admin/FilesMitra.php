@@ -10,290 +10,293 @@ use App\Controllers\BaseController;
 
 class FilesMitra extends BaseController
 {
-	protected $session;
+  protected $session;
+  
+    public function __construct()
+    {
+        $this->session = \Config\Services::session();
+        $this->gambarFilesMitraModel = new GambarFilesMitraModel();
+    }
+    
+    public function index()
+    {
+      if (!$this->session->has('isLogin')) {
+            return redirect()->to('/auth/login');
+        }
+        
+      if ($this->session->get('role') != 1) {
+            return redirect()->to('/');
+        }
 
-	public function __construct()
-	{
-		$this->session = \Config\Services::session();
-		$this->gambarFilesMitraModel = new GambarFilesMitraModel();
-	}
+        $FilesModel = new FilesMitraModel();
+        $HistoriModel = new HistoriModel();
+        $gambarFilesModel = new GambarFilesMitraModel();
+        $settings = $this->getSettingsData();
+        $userSudahLogin = $this->session->has('isLogin');
 
-	public function index()
-	{
-		if (!$this->session->has('isLogin')) {
-			return redirect()->to('/auth/login');
-		}
+        $data['files'] = $FilesModel->findAll();
+        $data['files_histori'] = $HistoriModel->findAll();
+        $data['files_gambar'] = $gambarFilesModel->findAll();
 
-		if ($this->session->get('role') != 1) {
-			return redirect()->to('/');
-		}
+        $data = [
+            'userSudahLogin' => $userSudahLogin,
+            'web_logo' => $settings['web_logo'],
+            'web_icon' => $settings['web_icon'],
+            'web_title' => $settings['web_title'],
+            'web_author' => $settings['web_author'],
+            'web_description' => $settings['web_description'],
+            'web_keywords' => $settings['web_keywords'],
+            'files' => $data['files'],
+            'files_histori' => $data['files_histori'],
+            'files_gambar' => $data['files_gambar'],
+            'gambarFilesModel' => $this->gambarFilesMitraModel,
+        ];
 
-		$FilesModel = new FilesMitraModel();
-		$HistoriModel = new HistoriModel();
-		$gambarFilesModel = new GambarFilesMitraModel();
-		$settings = $this->getSettingsData();
-		$userSudahLogin = $this->session->has('isLogin');
+        return view('admin/files-mitra/index_new', $data);
+    }
 
-		$data['files'] = $FilesModel->findAll();
-		$data['files_histori'] = $HistoriModel->findAll();
-		$data['files_gambar'] = $gambarFilesModel->findAll();
+     public function detail($slug)
+    {
+        $userSudahLogin = $this->session->has('isLogin');
 
-		$data = [
-			'userSudahLogin' => $userSudahLogin,
-			'web_logo' => $settings['web_logo'],
-			'web_icon' => $settings['web_icon'],
-			'web_title' => $settings['web_title'],
-			'web_author' => $settings['web_author'],
-			'web_description' => $settings['web_description'],
-			'web_keywords' => $settings['web_keywords'],
-			'files' => $data['files'],
-			'files_histori' => $data['files_histori'],
-			'files_gambar' => $data['files_gambar'],
-			'gambarFilesModel' => $this->gambarFilesMitraModel,
-		];
+        $FilesModel = new FilesMitraModel();
+        $gambarFilesModel = new GambarFilesMitraModel();
 
-		return view('admin/files-mitra/index_new', $data);
-	}
+        $produk = $FilesModel->where('slug', $slug)->first();
 
-	public function detail($slug)
-	{
-		$userSudahLogin = $this->session->has('isLogin');
+        if (!$produk) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
 
-		$FilesModel = new FilesMitraModel();
-		$gambarFilesModel = new GambarFilesMitraModel();
+        $gambar_produk = $gambarFilesModel->where('files_id', $produk['files_id'])->findAll();
 
-		$produk = $FilesModel->where('slug', $slug)->first();
+        $settings = $this->getSettingsData();
 
-		if (!$produk) {
-			throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
-		}
+        $data = [
+            'userSudahLogin' => $userSudahLogin,
+            'web_logo' => $settings['web_logo'],
+            'web_icon' => $settings['web_icon'],
+            'web_title' => $settings['web_title'],
+            'web_author' => $settings['web_author'],
+            'web_description' => $settings['web_description'],
+            'web_keywords' => $settings['web_keywords'],
+            'produk_data' => $produk,
+            'gambar_produk' => $gambar_produk,
+            'gambarProdukModel' => $gambarFilesModel,
+        ];
 
-		$gambar_produk = $gambarFilesModel->where('files_id', $produk['files_id'])->findAll();
+        return view('admin/files-mitra/detail', $data);
+    }
 
-		$settings = $this->getSettingsData();
+    public function create()
+    {
+        $settings = $this->getSettingsData();
+        $userSudahLogin = $this->session->has('isLogin');
+        $HistoriModel = new HistoriModel();
 
-		$data = [
-			'userSudahLogin' => $userSudahLogin,
-			'web_logo' => $settings['web_logo'],
-			'web_icon' => $settings['web_icon'],
-			'web_title' => $settings['web_title'],
-			'web_author' => $settings['web_author'],
-			'web_description' => $settings['web_description'],
-			'web_keywords' => $settings['web_keywords'],
-			'produk_data' => $produk,
-			'gambar_produk' => $gambar_produk,
-			'gambarProdukModel' => $gambarFilesModel,
-		];
+        $data['files_histori'] = $HistoriModel->findAll();
 
-		return view('admin/files-mitra/detail', $data);
-	}
+        $data = [
+            'userSudahLogin' => $userSudahLogin,
+            'web_logo' => $settings['web_logo'],
+            'web_icon' => $settings['web_icon'],
+            'web_title' => $settings['web_title'],
+            'web_author' => $settings['web_author'],
+            'web_description' => $settings['web_description'],
+            'web_keywords' => $settings['web_keywords'],
+            'files_histori' => $data['files_histori'],
 
-	public function create()
-	{
-		$settings = $this->getSettingsData();
-		$userSudahLogin = $this->session->has('isLogin');
-		$HistoriModel = new HistoriModel();
+        ];
 
-		$data['files_histori'] = $HistoriModel->findAll();
+        return view('admin/files-mitra/create', $data);
+    }
 
-		$data = [
-			'userSudahLogin' => $userSudahLogin,
-			'web_logo' => $settings['web_logo'],
-			'web_icon' => $settings['web_icon'],
-			'web_title' => $settings['web_title'],
-			'web_author' => $settings['web_author'],
-			'web_description' => $settings['web_description'],
-			'web_keywords' => $settings['web_keywords'],
-			'files_histori' => $data['files_histori'],
-		];
+    public function store()
+    {
+        $filesModel = new FilesMitraModel();
+        $gambarFilesModel = new GambarFilesMitraModel();
+    
+        $nama_files = $this->request->getPost('nama');
+        $slug = $this->createSlug($nama_files);
+        $status = $this->request->getPost('status');
+        if($status == 'on')
+              {
+                   $status_publish= 'Y';
+                }else{
+                    $status_publish = 'N';
+                }
+        $dataFiles = [
+            'nama' => $nama_files,
+            'slug' => $slug,
+            'deskripsi' => $this->request->getPost('deskripsi'),
+            'fotografer' => $this->request->getPost('fotografer'),
+            'kategori' => $this->request->getPost('kategori'),
+            'status' => $status_publish,
+            'keyword' => $this->request->getPost('keyword'),
+            'lokasi' => $this->request->getPost('lokasi'),
+            'date_create' => date('Y-m-d H:i:s'),
+            'date_kegiatan' => date('Y-m-d',strtotime($this->request->getPost('tanggal_kegiatan'))),
+        ];
 
-		return view('admin/files-mitra/create', $data);
-	}
+        $filesId = $filesModel->insert($dataFiles);
+    
+        $gambarData = [];
+        $gambarFiles = $this->request->getFiles('gambar');
 
-	public function store()
-	{
-		$filesModel = new FilesMitraModel();
-		$gambarFilesModel = new GambarFilesMitraModel();
+        foreach ($gambarFiles as $gambar) {
+            foreach ($gambar as $file) {
+                if ($file->isValid() && !$file->hasMoved()) {
+                    $newName = $file->getRandomName();
+                    $file->move('./public/img/files_mitra/', $newName);
+    
+                    $gambarData[] = [
+                        'files_id' => $filesId,
+                        'url_gambar' => 'public/img/files_mitra/' . $newName,
+                        'files_alias' => $newName,
+                    ];
+                }
+            }
+        }
+    
+        if (!empty($gambarData)) {
+            $gambarFilesModel->insertBatch($gambarData);
+        }
+    
+        $this->session->setFlashdata('success', 'Galeri berhasil ditambahkan.');
+    
+        return redirect()->to('admin/files-mitra/');
+    }
+        
+    private function createSlug($nama_files)
+    {
+        $slug = url_title($nama_files, '-', true);
+        $filesModel = new FilesMitraModel();
+    
+        $suffix = '';
+        $counter = 1;
+    
+        while ($filesModel->where('slug', $slug . $suffix)->first() !== null) {
+            $suffix = '-' . $counter;
+            $counter++;
+        }
+    
+        return $slug . $suffix;
+    }
 
-		$nama_files = $this->request->getPost('nama');
-		$slug = $this->createSlug($nama_files);
-		$status = $this->request->getPost('status');
-		if ($status == 'on') {
-			$status_publish = 'Y';
-		} else {
-			$status_publish = 'N';
-		}
-		$dataFiles = [
-			'nama' => $nama_files,
-			'slug' => $slug,
-			'deskripsi' => $this->request->getPost('deskripsi'),
-			'fotografer' => $this->request->getPost('fotografer'),
-			'kategori' => $this->request->getPost('kategori'),
-			'status' => $status_publish,
-			'keyword' => $this->request->getPost('keyword'),
-			'lokasi' => $this->request->getPost('lokasi'),
-			'date_create' => date('Y-m-d H:i:s'),
-			'date_kegiatan' => date('Y-m-d', strtotime($this->request->getPost('tanggal_kegiatan'))),
-		];
+    public function update($id)
+    {
+        $filesModel = new FilesMitraModel();
+        $gambarFilesModel = new GambarFilesMitraModel();
+    
+        $dataFiles = [
+            'nama' => $this->request->getPost('nama'),
+            'deskripsi' => $this->request->getPost('deskripsi'),
+            'lokasi' => $this->request->getPost('lokasi'),
+            'kategori' => $this->request->getPost('kategori'),
+            'lokasi' => $this->request->getPost('lokasi'),
+            'keyword' => $this->request->getPost('keyword'),
+            //'status' => $this->request->getPost('status'),
+            'date_kegiatan' => date('Y-m-d',strtotime($this->request->getPost('tanggal_kegiatan'))),
+        ];
 
-		$filesId = $filesModel->insert($dataFiles);
+        $filesModel->update($id, $dataFiles);
 
-		$gambarData = [];
-		$gambarFiles = $this->request->getFiles('gambar');
+        $gambarLama = $gambarFilesModel->where('files_id', $id)->findAll();
 
-		foreach ($gambarFiles as $gambar) {
-			foreach ($gambar as $file) {
-				if ($file->isValid() && !$file->hasMoved()) {
-					$newName = $file->getRandomName();
-					$file->move('./public/img/files_mitra/', $newName);
+        foreach ($gambarLama as $gambar) {
+            $path = $gambar->url_gambar;
+            if (file_exists($path)) {
+                unlink($path);
+            }
+        }
+        $gambarFilesModel->where('files_id', $id)->delete();
+    
+        $gambarData = [];
+        $gambarFiles = $this->request->getFiles('gambar');
+        
+        foreach ($gambarFiles as $gambar) {
+            if (is_array($gambar)) {
+                foreach ($gambar as $file) {
+                    if ($file->isValid() && !$file->hasMoved()) {
+                        $newName = $file->getRandomName();
+                        $file->move('./public/img/files_mitra/', $newName);
+        
+                        $gambarData[] = [
+                            'files_id' => $id,
+                            'url_gambar' => 'public/img/files_mitra/' . $newName,
+                            'files_alias' => $newName,
+                        ];
+                    }
+                }
+            } else {
+                if ($gambar->isValid() && !$gambar->hasMoved()) {
+                    $newName = $gambar->getRandomName();
+                    $gambar->move('./public/img/files_mitra/', $newName);
+        
+                    $gambarData[] = [
+                        'files_id' => $id,
+                        'url_gambar' => 'public/img/files_mitra/' . $newName,
+                        'files_alias' => $newName,
+                    ];
+                }
+            }
+        }
 
-					$gambarData[] = [
-						'files_id' => $filesId,
-						'url_gambar' => 'public/img/files_mitra/' . $newName,
-						'files_alias' => $newName,
-					];
-				}
-			}
-		}
+        if (!empty($gambarData)) {
+            $gambarFilesModel->insertBatch($gambarData);
+        }
+    
+        $this->session->setFlashdata('success', 'Files Mitra berhasil diperbarui.');
 
-		if (!empty($gambarData)) {
-			$gambarFilesModel->insertBatch($gambarData);
-		}
+        return redirect()->to('admin/files-mitra/');
+    }
 
-		$this->session->setFlashdata('success', 'Galeri berhasil ditambahkan.');
+    public function delete($id)
+    {
+        $filesModel = new FilesMitraModel();
+        $gambarFilesModel = new GambarFilesMitraModel();
 
-		return redirect()->to('admin/files-mitra/');
-	}
+        $filesModel->delete($id);
 
-	private function createSlug($nama_files)
-	{
-		$slug = url_title($nama_files, '-', true);
-		$filesModel = new FilesMitraModel();
+        $gambarFilesModel->where('files_id', $id)->delete();
 
-		$suffix = '';
-		$counter = 1;
+        $this->session->setFlashdata('success', 'Galeri berhasil dihapus.');
 
-		while ($filesModel->where('slug', $slug . $suffix)->first() !== null) {
-			$suffix = '-' . $counter;
-			$counter++;
-		}
+        return redirect()->to('admin/files-mitra/');
+    }
 
-		return $slug . $suffix;
-	}
+    public function publish($id)
+    {
+        $filesModel = new FilesMitraModel();
 
-	public function update($id)
-	{
-		$filesModel = new FilesMitraModel();
-		$gambarFilesModel = new GambarFilesMitraModel();
+        $dataFiles = [
+            'status' => 'NonAktif',
+        ];
 
-		$dataFiles = [
-			'nama' => $this->request->getPost('nama'),
-			'deskripsi' => $this->request->getPost('deskripsi'),
-			'lokasi' => $this->request->getPost('lokasi'),
-			'kategori' => $this->request->getPost('kategori'),
-			'lokasi' => $this->request->getPost('lokasi'),
-			'keyword' => $this->request->getPost('keyword'),
-			//'status' => $this->request->getPost('status'),
-			'date_kegiatan' => date('Y-m-d', strtotime($this->request->getPost('tanggal_kegiatan'))),
-		];
-
-		$filesModel->update($id, $dataFiles);
-
-		$gambarLama = $gambarFilesModel->where('files_id', $id)->findAll();
-
-		foreach ($gambarLama as $gambar) {
-			$path = $gambar->url_gambar;
-			if (file_exists($path)) {
-				unlink($path);
-			}
-		}
-		$gambarFilesModel->where('files_id', $id)->delete();
-
-		$gambarData = [];
-		$gambarFiles = $this->request->getFiles('gambar');
-
-		foreach ($gambarFiles as $gambar) {
-			if (is_array($gambar)) {
-				foreach ($gambar as $file) {
-					if ($file->isValid() && !$file->hasMoved()) {
-						$newName = $file->getRandomName();
-						$file->move('./public/img/files_mitra/', $newName);
-
-						$gambarData[] = [
-							'files_id' => $id,
-							'url_gambar' => 'public/img/files_mitra/' . $newName,
-							'files_alias' => $newName,
-						];
-					}
-				}
-			} else {
-				if ($gambar->isValid() && !$gambar->hasMoved()) {
-					$newName = $gambar->getRandomName();
-					$gambar->move('./public/img/files_mitra/', $newName);
-
-					$gambarData[] = [
-						'files_id' => $id,
-						'url_gambar' => 'public/img/files_mitra/' . $newName,
-						'files_alias' => $newName,
-					];
-				}
-			}
-		}
-
-		if (!empty($gambarData)) {
-			$gambarFilesModel->insertBatch($gambarData);
-		}
-
-		$this->session->setFlashdata('success', 'Files Mitra berhasil diperbarui.');
-
-		return redirect()->to('admin/files-mitra/');
-	}
-
-	public function delete($id)
-	{
-		$filesModel = new FilesMitraModel();
-		$gambarFilesModel = new GambarFilesMitraModel();
-
-		$filesModel->delete($id);
-
-		$gambarFilesModel->where('files_id', $id)->delete();
-
-		$this->session->setFlashdata('success', 'Galeri berhasil dihapus.');
-
-		return redirect()->to('admin/files-mitra/');
-	}
-
-	public function publish($id)
-	{
-		$filesModel = new FilesMitraModel();
-
-		$dataFiles = [
-			'status' => 'NonAktif',
-		];
-
-		$filesModel->update($id, $dataFiles);
-
-
-		$this->session->setFlashdata('success', 'Galeri berhasil diperbarui.');
-
-		return redirect()->to('admin/files-mitra/');
-	}
+        $filesModel->update($id, $dataFiles);
 
 
+       $this->session->setFlashdata('success', 'Galeri berhasil diperbarui.');
 
-	public function unpublish($id)
-	{
-		$filesModel = new FilesMitraModel();
-
-		$dataFiles = [
-			'status' => 'Aktif',
-		];
-
-		$filesModel->update($id, $dataFiles);
+        return redirect()->to('admin/files-mitra/');
+    }
 
 
-		$this->session->setFlashdata('success', 'Galeri berhasil diperbarui.');
 
-		return redirect()->to('admin/files-mitra/');
-	}
+    public function unpublish($id)
+    {
+        $filesModel = new FilesMitraModel();
+
+        $dataFiles = [
+            'status' => 'Aktif',
+        ];
+
+        $filesModel->update($id, $dataFiles);
+
+
+       $this->session->setFlashdata('success', 'Galeri berhasil diperbarui.');
+
+        return redirect()->to('admin/files-mitra/');
+    }
+    
 }

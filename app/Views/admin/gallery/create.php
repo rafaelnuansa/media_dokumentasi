@@ -37,7 +37,7 @@
 					<input type="text" class="form-control" id="lokasi" name="lokasi" placeholder="Masukkan lokasi kegiatan" required>
 				</div>
 				<div class="mb-3">
-					<label for="user_id" class="form-label">ID Pengguna</label>
+					<label for="user_id" class="form-label">Fotorgrafer</label>
 					<select class="form-select" id="user_id" name="user_id" required>
 						<option value="">Pilih Pengguna</option>
 						<?php foreach ($users as $user) : ?>
@@ -46,7 +46,7 @@
 					</select>
 				</div>
 				<div class="mb-3">
-					<label for="kategori_id" class="form-label">ID Kategori</label>
+					<label for="kategori_id" class="form-label">Kategori</label>
 					<select class="form-select" id="kategori_id" name="kategori_id" required>
 						<option value="">Pilih Kategori</option>
 						<?php foreach ($categories as $category) : ?>
